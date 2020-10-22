@@ -2,6 +2,7 @@ import React from 'react';
 import GridBoard from './components/GridBoard'
 import NextBlock from './components/NextBlock'
 import ScoreBoard from './components/ScoreBoard'
+import Controls from './components/Controls'
 import './App.css';
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <GridBoard /> 
       <NextBlock /> 
       <ScoreBoard />
+      <Controls />
     </div>
   );
 }
