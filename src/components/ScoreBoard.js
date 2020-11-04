@@ -18,10 +18,10 @@ export default function ScoreBoard(props) {
 				} else {
 					dispatch(resume())
 				}
-			}}>{isRunning ? 'Pause' : 'Play'}</button>
+			}}>{isRunning ? '⏸' : '▶️'}</button>
 			<button className="score-board-button" onClick={(e) => {
 				dispatch(restart())
-			}}>Restart</button>
+			}}>🔄</button>
 		</div>
 	)
 }
