@@ -28,11 +28,12 @@ code {
   /* Square Colors:  background colors for the squares.*/
   --color-0: rgb(19, 18, 18);
   --color-1: #fc6e22;
-  --color-2: #ffff66;
+  --color-2: #f7f75b;
   --color-3: #c24cf6;
+  --color-3-border: #610788;
   --color-4: #ff1493;
   --color-5: #00ff00;
-  --color-6: #a0edff;
+  --color-6: #00cefc;
   --color-7: #ff0000;
 
   /* Button Colors */
@@ -54,47 +55,48 @@ code {
 /* Colors */
 .color-0 {
   background-color: var(--color-0);
-  clip-path: var(--clip-path)
+  clip-path: var(--clip-path);
 }
 
 .color-1 {
   background-color: var(--color-1);
-  clip-path: var(--clip-path)
+  clip-path: var(--clip-path);
  
 }
 
 .color-2 {
   background-color: var(--color-2);
-  clip-path: var(--clip-path)
+  clip-path: var(--clip-path);
 
 }
 
 .color-3 {
   background-color: var(--color-3);
-  clip-path: var(--clip-path)
-  
+  clip-path: var(--clip-path);
+  position: relative;
 }
+
 
 .color-4 {
   background-color: var(--color-4);
-  clip-path: var(--clip-path)
+  clip-path: var(--clip-path);
 }
 
 .color-5 {
   background-color: var(--color-5);
-  clip-path: var(--clip-path)
+  clip-path: var(--clip-path);
   
 }
 
 .color-6 {
   background-color: var(--color-6);
-  clip-path: var(--clip-path)
+  clip-path: var(--clip-path);
   
 }
 
 .color-7 {
   background-color: var(--color-7);
-  clip-path: var(--clip-path)
+  clip-path: var(--clip-path);
 
 }
 
@@ -212,10 +214,7 @@ and 'b'. The '.' represents an empty cell on the grid. */
   border-right-color: var(--button-color-l);
   border-bottom-color: var(--button-color-t);
   transform: rotate(180deg);
-  /* border-top-color: var(--button-color-b);
-  border-left-color: var(--button-color-r);
-  border-right-color: var(--button-color-t);
-  border-bottom-color: var(--button-color-l); */
+
 }
 
 /* Message Popup Styles */

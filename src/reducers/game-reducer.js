@@ -73,8 +73,8 @@ import {
         return state
 
       case RESTART:
-
-        return state
+        
+        return defaultState()
 
       default:
         return state

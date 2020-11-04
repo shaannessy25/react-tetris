@@ -21,7 +21,7 @@ export default function ScoreBoard(props) {
 			}}>{isRunning ? '⏸' : '▶️'}</button>
 			<button className="score-board-button" onClick={(e) => {
 				dispatch(restart())
-			}}>🔄</button>
+			}}><span>🔄 </span></button>
 		</div>
 	)
 }
