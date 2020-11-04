@@ -17,13 +17,13 @@ code {
 }
 
 :root {
-  --bg-color: #C0E0DE;
+  --bg-color: #778899;
 
   /* Border Colors are all transparent colors. These will tint or shade the background color of the square. */
-  --border-left-color: rgba(255, 255, 255, 0.952);
-  --border-top-color: rgba(255, 255, 255, 0.753);
-  --border-right-color: rgba(255, 255, 255, 0.486);
-  --border-bottom-color: rgba(255, 255, 255, 0.671);
+  --border-left-color: #f2e2d2d8;
+  --border-top-color: #f2e2d2b7;
+  --border-right-color: #f2e2d286;
+  --border-bottom-color: #f2e2d296;
 
   /* Square Colors:  background colors for the squares.*/
   --color-0: rgb(19, 18, 18);
@@ -42,6 +42,8 @@ code {
   --button-color-b: rgba(120, 120, 120, 1);
   --button-color-l: rgba(222, 222, 222, 1);
 
+  --control-button-background: #A9A9A9;
+  --control-button-color: #D62246;
   /* Numbers define values that will be used throughout the CSS.
   --tile-size: 20px for example will set size of the grid squares. */
   --cols: 10;
@@ -163,17 +165,19 @@ and 'b'. The '.' represents an empty cell on the grid. */
 /* Score Board */
 .score-board {
   grid-area: r;
+  font-style: "Droid Sans";
+  font-size: 14pt;
+  font-weight: bold;
+  color: whitesmoke;
 }
 
 .score-board-button {
   display: block;
-  padding: 1em;
-  border-width: 5px;
+  font-size: 28pt;
+  border: none;
   outline: none;
-  border-top-color: var(--button-color-t);
-  border-left-color: var(--button-color-l);
-  border-right-color: var(--button-color-r);
-  border-bottom-color: var(--button-color-b);
+  background-color: transparent;
+
 }
 
 /* controls */
@@ -189,6 +193,8 @@ and 'b'. The '.' represents an empty cell on the grid. */
   width: var(--size);
   height: var(--size);
   text-align: center;
+  background-color: var(--control-button-background);
+  color: var(--control-button-color);
   outline: none;
   display: block;
   border-width: 5px;
@@ -198,14 +204,17 @@ and 'b'. The '.' represents an empty cell on the grid. */
   border-bottom-color: var(--button-color-b);
 }
 
-.control-button:hover {
-  color: red
+.control-button:hover, .right-button:hover {
+  color: #D62246;
+  background-color: #A9A9A9;
 }
 
 .right-button {
   --size: calc(var(--tile-size) * 2.5);
   width: var(--size);
   height: var(--size);
+  background-color: var(--control-button-background);
+  color: var(--control-button-color);
   outline: none;
   text-align: center;
   display: block;
