@@ -1,144 +1,144 @@
 export const random = (min, max) => {
-    return Math.floor(Math.random() * (max - min + 1)) + min
-  } 
+  return Math.floor(Math.random() * (max - min + 1)) + min
+}
 
 
-  export const gridDefault = () => {
-      const rows = 18
-      const cols = 10
-      const array = []
-      for (let row = 0; row < rows; row++){
-          array.push([])
-          for (let col = 0; col < cols; col++){
-              array[row].push(0)
-          }
+export const gridDefault = () => {
+  const rows = 18
+  const cols = 10
+  const array = []
+  for (let row = 0; row < rows; row++) {
+      array.push([])
+      for (let col = 0; col < cols; col++) {
+          array[row].push(0)
       }
-    
-      return array
   }
+
+  return array
+}
 
 
 
 // Define block shapes and their rotations as arrays.
 export const shapes = [
-    // none
-    [[[0,0,0,0],
-      [0,0,0,0],
-      [0,0,0,0],
-      [0,0,0,0]]],
-  
-    // I
-    [[[0,0,0,0],
-      [1,1,1,1],
-      [0,0,0,0],
-      [0,0,0,0]],
-  
-     [[0,1,0,0],
-      [0,1,0,0],
-      [0,1,0,0],
-      [0,1,0,0]]],
-  
-    // T
-    [[[0,0,0,0],
-      [1,1,1,0],
-      [0,1,0,0],
-      [0,0,0,0]],
-  
-     [[0,1,0,0],
-      [1,1,0,0],
-      [0,1,0,0],
-      [0,0,0,0]],
-  
-     [[0,1,0,0],
-      [1,1,1,0],
-      [0,0,0,0],
-      [0,0,0,0]],
-  
-     [[0,1,0,0],
-      [0,1,1,0],
-      [0,1,0,0],
-      [0,0,0,0]]],
-  
-    // L
-    [[[0,0,0,0],
-      [1,1,1,0],
-      [1,0,0,0],
-      [0,0,0,0]],
-  
-     [[1,1,0,0],
-      [0,1,0,0],
-      [0,1,0,0],
-      [0,0,0,0]],
-  
-     [[0,0,1,0],
-      [1,1,1,0],
-      [0,0,0,0],
-     [0,0,0,0]],
-  
-     [[0,1,0,0],
-      [0,1,0,0],
-      [0,1,1,0],
-      [0,0,0,0]]],
-  
-    // J
-    [[[1,0,0,0],
-      [1,1,1,0],
-      [0,0,0,0],
-      [0,0,0,0]],
-  
-     [[0,1,1,0],
-      [0,1,0,0],
-      [0,1,0,0],
-      [0,0,0,0]],
-  
-     [[0,0,0,0],
-      [1,1,1,0],
-      [0,0,1,0],
-      [0,0,0,0]],
-  
-     [[0,1,0,0],
-      [0,1,0,0],
-      [1,1,0,0],
-      [0,0,0,0]]],
-  
-    // Z
-    [[[0,0,0,0],
-      [1,1,0,0],
-      [0,1,1,0],
-      [0,0,0,0]],
-  
-     [[0,0,1,0],
-      [0,1,1,0],
-      [0,1,0,0],
-      [0,0,0,0]]],
-  
-    // S
-    [[[0,0,0,0],
-      [0,1,1,0],
-      [1,1,0,0],
-      [0,0,0,0]],
-  
-     [[0,1,0,0],
-      [0,1,1,0],
-      [0,0,1,0],
-      [0,0,0,0]]],
-  
-    // O
-    [[[0,1,1,0],
-      [0,1,1,0],
-      [0,0,0,0],
-      [0,0,0,0]]]
-  ]
+  // none
+  [[[0, 0, 0, 0],
+  [0, 0, 0, 0],
+  [0, 0, 0, 0],
+  [0, 0, 0, 0]]],
 
-  // Random Shape
+  // I
+  [[[0, 0, 0, 0],
+  [1, 1, 1, 1],
+  [0, 0, 0, 0],
+  [0, 0, 0, 0]],
+
+  [[0, 1, 0, 0],
+  [0, 1, 0, 0],
+  [0, 1, 0, 0],
+  [0, 1, 0, 0]]],
+
+  // T
+  [[[0, 0, 0, 0],
+  [1, 1, 1, 0],
+  [0, 1, 0, 0],
+  [0, 0, 0, 0]],
+
+  [[0, 1, 0, 0],
+  [1, 1, 0, 0],
+  [0, 1, 0, 0],
+  [0, 0, 0, 0]],
+
+  [[0, 1, 0, 0],
+  [1, 1, 1, 0],
+  [0, 0, 0, 0],
+  [0, 0, 0, 0]],
+
+  [[0, 1, 0, 0],
+  [0, 1, 1, 0],
+  [0, 1, 0, 0],
+  [0, 0, 0, 0]]],
+
+  // L
+  [[[0, 0, 0, 0],
+  [1, 1, 1, 0],
+  [1, 0, 0, 0],
+  [0, 0, 0, 0]],
+
+  [[1, 1, 0, 0],
+  [0, 1, 0, 0],
+  [0, 1, 0, 0],
+  [0, 0, 0, 0]],
+
+  [[0, 0, 1, 0],
+  [1, 1, 1, 0],
+  [0, 0, 0, 0],
+  [0, 0, 0, 0]],
+
+  [[0, 1, 0, 0],
+  [0, 1, 0, 0],
+  [0, 1, 1, 0],
+  [0, 0, 0, 0]]],
+
+  // J
+  [[[1, 0, 0, 0],
+  [1, 1, 1, 0],
+  [0, 0, 0, 0],
+  [0, 0, 0, 0]],
+
+  [[0, 1, 1, 0],
+  [0, 1, 0, 0],
+  [0, 1, 0, 0],
+  [0, 0, 0, 0]],
+
+  [[0, 0, 0, 0],
+  [1, 1, 1, 0],
+  [0, 0, 1, 0],
+  [0, 0, 0, 0]],
+
+  [[0, 1, 0, 0],
+  [0, 1, 0, 0],
+  [1, 1, 0, 0],
+  [0, 0, 0, 0]]],
+
+  // Z
+  [[[0, 0, 0, 0],
+  [1, 1, 0, 0],
+  [0, 1, 1, 0],
+  [0, 0, 0, 0]],
+
+  [[0, 0, 1, 0],
+  [0, 1, 1, 0],
+  [0, 1, 0, 0],
+  [0, 0, 0, 0]]],
+
+  // S
+  [[[0, 0, 0, 0],
+  [0, 1, 1, 0],
+  [1, 1, 0, 0],
+  [0, 0, 0, 0]],
+
+  [[0, 1, 0, 0],
+  [0, 1, 1, 0],
+  [0, 0, 1, 0],
+  [0, 0, 0, 0]]],
+
+  // O
+  [[[0, 1, 1, 0],
+  [0, 1, 1, 0],
+  [0, 0, 0, 0],
+  [0, 0, 0, 0]]]
+]
+
+// Random Shape
 export const randomShape = () => {
-    return random(1, shapes.length - 1)
-  }
+  return random(1, shapes.length - 1)
+}
 
 
-  // Return the default state for the game
+// Return the default state for the game
 export const defaultState = () => {
-    return {
+  return {
       // Create an empty grid
       grid: gridDefault(),
       // Get a new random shape
@@ -158,10 +158,12 @@ export const defaultState = () => {
       speed: 1000,
       // Game isn't over yet
       gameOver: false
-    }
   }
+}
 
-  // Returns the next rotation for a shape
+
+
+// Returns the next rotation for a shape
 // rotation can't exceed the last index of the the rotations for the given shape.
 export const nextRotation = (shape, rotation) => {
   return (rotation + 1) % shapes[shape].length
@@ -200,23 +202,30 @@ export const canMoveTo = (shape, grid, x, y, rotation) => {
 }
 
 
+
 // Adds current shape to grid
 export const addBlockToGrid = (shape, grid, x, y, rotation) => {
-  // Get the block array
-  const block = shapes[shape][rotation];
-  // Copy the grid
-  const newGrid = [...grid];            
-  // Map the Block onto the grid                                                           
+  // At this point the game is not over
+  let blockOffGrid = false
+  const block = shapes[shape][rotation]
+  const newGrid = [...grid]
   for (let row = 0; row < block.length; row++) {
       for (let col = 0; col < block[row].length; col++) {
           if (block[row][col]) {
-              newGrid[row + y][col + x] = shape;
+              const yIndex = row + y
+              // If the yIndex is less than 0 part of the block
+              // is off the top of the screen and the game is over
+              if (yIndex < 0) {
+                  blockOffGrid = true
+              } else {
+                  newGrid[row + y][col + x] = shape
+              }
           }
       }
   }
-  return newGrid;
+  // Return both the newGrid and the gameOver bool                                                
+  return { grid: newGrid, gameOver: blockOffGrid }
 }
-
 
 
 // Checks for completed rows and scores points
@@ -226,13 +235,13 @@ export const checkRows = (grid) => {
   const points = [0, 40, 100, 300, 1200]
   let completedRows = 0
   for (let row = 0; row < grid.length; row++) {
-    // No empty cells means it can't find a 0, so the row must be complete!
-    if (grid[row].indexOf(0) === -1) {
-      completedRows += 1
-      // Remove the row and add a new empty one at the top
-      grid.splice(row, 1)
-      grid.unshift(Array(10).fill(0))
-    }
+      // No empty cells means it can't find a 0, so the row must be complete!
+      if (grid[row].indexOf(0) === -1) {
+          completedRows += 1
+          // Remove the row and add a new empty one at the top
+          grid.splice(row, 1)
+          grid.unshift(Array(10).fill(0))
+      }
   }
   return points[completedRows]
 }

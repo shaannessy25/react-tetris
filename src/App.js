@@ -8,7 +8,7 @@ import NextBlock from "./components/NextBlock";
 import ScoreBoard from "./components/ScoreBoard";
 import Controls from "./components/Controls";
 import MessagePopUp from "./components/MessagePopup";
-import Instructions from "./components/Instructions"
+// import Instructions from "./components/Instructions"
 import "./App.css";
 
 const store = createStore(reducers);
@@ -25,7 +25,7 @@ function App() {
         <ScoreBoard />
         <Controls />
         <MessagePopUp />
-        <Instructions />
+        {/* <Instructions /> */}
       </div>
     </Provider>
   );
