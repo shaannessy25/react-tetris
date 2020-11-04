@@ -151,6 +151,7 @@ and 'b'. The '.' represents an empty cell on the grid. */
   display: block;
   padding: 1em;
   border-width: 5px;
+  outline: none;
   border-top-color: var(--button-color-t);
   border-left-color: var(--button-color-l);
   border-right-color: var(--button-color-r);
@@ -170,6 +171,7 @@ and 'b'. The '.' represents an empty cell on the grid. */
   width: var(--size);
   height: var(--size);
   text-align: center;
+  outline: none;
   display: block;
   border-width: 5px;
   border-top-color: var(--button-color-t);
@@ -186,6 +188,7 @@ and 'b'. The '.' represents an empty cell on the grid. */
   --size: calc(var(--tile-size) * 2.5);
   width: var(--size);
   height: var(--size);
+  outline: none;
   text-align: center;
   display: block;
   border-width: 5px;

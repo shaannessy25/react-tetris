@@ -34,10 +34,7 @@ export default function Controls(props) {
 				dispatch(moveLeft())
 			}}>⬅</button>
 
-			<button className="right-button" onClick={(e) => {
-				if (!isRunning || gameOver) { return }
-				dispatch(moveRight())
-			}}>⬅</button>
+
 			{/* rotate */}
 			<button className="control-button" onClick={(e) => {
 				if (!isRunning || gameOver) { return }
@@ -48,6 +45,11 @@ export default function Controls(props) {
 				if (!isRunning || gameOver) { return }
 				dispatch(moveDown())
 			}}>⬇</button>
+			
+			<button className="right-button" onClick={(e) => {
+				if (!isRunning || gameOver) { return }
+				dispatch(moveRight())
+			}}>⬅</button>
 		</div>
 	)
 }
