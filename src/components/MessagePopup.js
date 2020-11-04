@@ -1,6 +1,6 @@
 import React from 'react'
 import { useSelector, useDispatch } from 'react-redux'
-import { howTo, resume } from '../actions';
+import { howTo, resume, restart } from '../actions';
 
 // Displays a message
 export default function MessagePopup(props) {
@@ -26,6 +26,10 @@ export default function MessagePopup(props) {
       <button onClick={(e) => {
         dispatch(resume())
       }}>Resume</button>
+
+      <button onClick={(e) => {
+        dispatch(restart())
+      }}>Restart</button>
 
       <button onClick={(e) => {
         dispatch(howTo())

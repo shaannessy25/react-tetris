@@ -260,6 +260,13 @@ and 'b'. The '.' represents an empty cell on the grid. */
   align-items: center;
 }
 
+.message-popup h1 {
+  font-size: 14pt;
+  margin: 15px;
+  font-weight: bolder;
+  letter-spacing: 1.5px;
+}
+
 .message-popup.hidden {
   display: none;
 }
@@ -270,13 +277,15 @@ and 'b'. The '.' represents an empty cell on the grid. */
   color: white;
   font-weight: bold;
   border-radius: 25px;
-  border: 2px solid var(--color-5);
+  border: 1px solid var(--color-5);
   width: 100px;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
   outline: none;
   transition: 200ms;
+  transition-timing-function: ease-in;
 }
 
 .message-popup button:hover {
   background-color: var(--bg-color);
+  border: 1px dotted var(--color-5);
 }
