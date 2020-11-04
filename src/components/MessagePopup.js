@@ -1,13 +1,13 @@
 import React from 'react'
 import { useSelector, useDispatch } from 'react-redux'
-import { resume } from '../actions';
+import { howTo, resume } from '../actions';
 
 // Displays a message
 export default function MessagePopup(props) {
   const dispatch = useDispatch();
   const isRunning = useSelector((state) => state.game.isRunning)
   const gameOver = useSelector((state) => state.game.gameOver)
-
+  const isPaused = useSelector((state) => state.game.isPaused)
   let message = ''
   let isHidden = 'hidden'
 
@@ -22,11 +22,14 @@ export default function MessagePopup(props) {
   return (
     <div className={`message-popup ${isHidden}`}>
       <h1>{message}</h1>
+
       <button onClick={(e) => {
         dispatch(resume())
       }}>Resume</button>
-      
-      <button>How To Play</button>
+
+      <button onClick={(e) => {
+        dispatch(howTo())
+      }}>How To Play</button>
     </div>
   )
 }

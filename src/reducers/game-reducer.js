@@ -1,6 +1,6 @@
 import {
     MOVE_RIGHT, MOVE_LEFT, MOVE_DOWN, ROTATE,
-    PAUSE, RESUME, RESTART, GAME_OVER
+    PAUSE, RESUME, RESTART, GAME_OVER, HOWTO
   } from '../actions'
   
 import { 
@@ -9,7 +9,7 @@ import {
 } from '../utils'
 
   const gameReducer = (state = defaultState(), action) => {
-    const { shape, grid, x, y, rotation, nextShape, score, isRunning } = state
+    const { shape, grid, x, y, rotation, nextShape, score, isRunning, isPaused } = state
     switch(action.type) {
       case ROTATE:
         const newRotation = nextRotation(shape, rotation)
@@ -48,6 +48,7 @@ import {
           newState.nextShape = randomShape()
           newState.score = score
           newState.isRunning = isRunning
+          newState.isPaused = isPaused
         
           if (!canMoveTo(nextShape, newGrid, 0, 4, 0)) {
             // Game Over
@@ -62,7 +63,7 @@ import {
 
       case RESUME:
 
-        return { ...state, isRunning: true }
+        return { ...state, isRunning: true, isPaused: false }
 
       case PAUSE:
 
@@ -73,8 +74,12 @@ import {
         return state
 
       case RESTART:
-        
+
         return defaultState()
+      
+      case HOWTO:
+
+        return { ...state, isRunning: false, isPaused: true }
 
       default:
         return state
