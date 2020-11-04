@@ -47,40 +47,55 @@ code {
   --rows: 18;
   --tile-size: 20px;
   --border-width: 0.5px;
+
+  --clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
 }
 
 /* Colors */
 .color-0 {
-  border: 2px dashed var(--color-0);
   background-color: var(--color-0);
+  clip-path: var(--clip-path)
 }
 
 .color-1 {
   background-color: var(--color-1);
+  clip-path: var(--clip-path)
+ 
 }
 
 .color-2 {
   background-color: var(--color-2);
+  clip-path: var(--clip-path)
+
 }
 
 .color-3 {
   background-color: var(--color-3);
+  clip-path: var(--clip-path)
+  
 }
 
 .color-4 {
   background-color: var(--color-4);
+  clip-path: var(--clip-path)
 }
 
 .color-5 {
   background-color: var(--color-5);
+  clip-path: var(--clip-path)
+  
 }
 
 .color-6 {
   background-color: var(--color-6);
+  clip-path: var(--clip-path)
+  
 }
 
 .color-7 {
   background-color: var(--color-7);
+  clip-path: var(--clip-path)
+
 }
 
 /* App */
@@ -192,7 +207,11 @@ and 'b'. The '.' represents an empty cell on the grid. */
   text-align: center;
   display: block;
   border-width: 5px;
-  transform: rotate(-180deg);
+  border-top-color: var(--button-color-b);
+  border-left-color: var(--button-color-r);
+  border-right-color: var(--button-color-l);
+  border-bottom-color: var(--button-color-t);
+  transform: rotate(180deg);
   /* border-top-color: var(--button-color-b);
   border-left-color: var(--button-color-r);
   border-right-color: var(--button-color-t);
