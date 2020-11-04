@@ -126,6 +126,7 @@ and 'b'. The '.' represents an empty cell on the grid. */
 
 .App-header {
   background-color: #282c34;
+  height: 80px;
   grid-area: h;
   text-align: center;
   color: white;
@@ -227,6 +228,8 @@ and 'b'. The '.' represents an empty cell on the grid. */
   height: calc(var(--tile-size) * 10);
   background-color: rgba(255, 255, 255, 0.5);
   text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .message-popup.hidden {

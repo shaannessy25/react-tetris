@@ -20,6 +20,8 @@ export default function MessagePopup(props) {
   return (
     <div className={`message-popup ${isHidden}`}>
       <h1>{message}</h1>
+      <button>Resume</button>
+      <button>How To Play</button>
     </div>
   )
 }
