@@ -181,8 +181,15 @@ and 'b'. The '.' represents an empty cell on the grid. */
   border: none;
   outline: none;
   background-color: transparent;
-
+  transition: 500ms;
+  transition-timing-function: ease-in-out;
 }
+
+.score-board-button:hover {
+  background-color: var(--color-2);
+  
+}
+
 
 /* controls */
 .controls {
@@ -206,11 +213,16 @@ and 'b'. The '.' represents an empty cell on the grid. */
   border-left-color: var(--button-color-l);
   border-right-color: var(--button-color-r);
   border-bottom-color: var(--button-color-b);
+  transition: 200ms;
+  transition-timing-function: ease-in-out;
 }
 
 .control-button:hover, .right-button:hover {
-  color: #D62246;
-  background-color: #A9A9A9;
+  background-color: #575454;
+  font-size: 14pt;
+  text-align: center;
+  border-color: var(--button-color-l);
+
 }
 
 .right-button {
@@ -228,6 +240,8 @@ and 'b'. The '.' represents an empty cell on the grid. */
   border-right-color: var(--button-color-l);
   border-bottom-color: var(--button-color-t);
   transform: rotate(180deg);
+  transition: 200ms;
+  transition-timing-function: ease-in-out;
 
 }
 
@@ -239,7 +253,7 @@ and 'b'. The '.' represents an empty cell on the grid. */
   transform: translate(-50%, -50%);
   width: calc(var(--tile-size) * 10);
   height: calc(var(--tile-size) * 10);
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.644);
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -249,7 +263,6 @@ and 'b'. The '.' represents an empty cell on the grid. */
 .message-popup.hidden {
   display: none;
 }
-
 
 .message-popup button {
   background-color: #000;
